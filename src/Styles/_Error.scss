@@ -1,0 +1,17 @@
+.error {
+  margin-top: $gap * 2;
+  .error-btn {
+    margin: 10px 0 0;
+    padding: 6px 15px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb($color, 0.2);
+    color: $color;
+    font-weight: bold;
+    border-radius: $radius;
+    a {
+      text-decoration: none;
+      color: $color;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.cocktail-info {
+  button {
+    margin: $gap 0 0;
+    padding: 6px 15px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb($color, 0.2);
+    font-weight: bold;
+    border-radius: $radius;
+    a {
+      color: $color;
+      text-decoration: none;
+    }
+  }
+  h3 {
+    font-size: 25px;
+    margin-top: $gap;
+    color: $color;
+  }
+  .container {
+    border-radius: $radius;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: $gray;
+    padding: $gap;
+    .image {
+      border-radius: $radius;
+      flex-basis: calc((100% / 2) - 30px);
+      img {
+        border-radius: $radius;
+        width: 100%;
+      }
+    }
+    .list {
+      flex-basis: calc((100% / 2) - 30px);
+      ul {
+        text-align: start;
+        display: flex;
+        gap: 5px;
+        flex-flow: column nowrap;
+        li {
+          font-size: 22px;
+          color: $darkGray;
+          span {
+            font-weight: $bold + 100;
+            color: $color;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      flex-flow: column nowrap;
+    }
+  }
+}

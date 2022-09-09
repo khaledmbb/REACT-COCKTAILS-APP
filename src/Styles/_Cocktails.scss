@@ -1,0 +1,59 @@
+.cocktails-list {
+  padding: $gap $gap;
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    li {
+      flex-basis: calc((100% / 3) - 20px);
+      @media screen and (max-width: 1300px) {
+        flex-basis: calc((100% / 2) - 20px);
+      }
+      @media screen and (max-width: 800px) {
+        flex-basis: 100%;
+      }
+      .wrapper {
+        text-align: start;
+        background-color: $gray;
+        padding: $gap;
+        border-radius: $radius;
+        .img {
+          border-radius: $radius $radius 0 0;
+          width: 100%;
+          img {
+            border-radius: $radius $radius 0 0;
+            width: 100%;
+          }
+        }
+        .info {
+          padding: 0 10px;
+          h4 {
+            color: $color;
+            font-size: 25px;
+          }
+          .glass {
+            font-weight: 500;
+          }
+          .type {
+            color: $darkGray;
+          }
+          button {
+            margin: 10px 0 0;
+            padding: 6px 15px;
+            cursor: pointer;
+            border: 0;
+            background-color: rgb($color, 0.2);
+            font-weight: bold;
+            border-radius: $radius;
+            a {
+              color: $color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
